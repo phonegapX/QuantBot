@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
-	"os"
+	//"os"
 	"strconv"
 	"time"
 )
@@ -32,8 +32,8 @@ var (
 )
 
 func init() {
-	os.Setenv("HTTP_PROXY", "http://127.0.0.1:6667")
-	os.Setenv("HTTPS_PROXY", "https://127.0.0.1:6667")
+	//os.Setenv("HTTP_PROXY", "http://127.0.0.1:6667")
+	//os.Setenv("HTTPS_PROXY", "https://127.0.0.1:6667")
 }
 
 func buildParamsSigned(postForm *url.Values) error {

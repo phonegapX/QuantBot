@@ -2,7 +2,7 @@ package api
 
 import (
 	"fmt"
-	"os"
+	//"os"
 	"sort"
 	"strings"
 	"time"
@@ -112,8 +112,8 @@ func (e *OKEX) GetMinAmount(stock string) float64 {
 
 func (e *OKEX) getAuthJSON(url string, params []string) (json *simplejson.Json, err error) {
 
-	os.Setenv("HTTP_PROXY", "http://127.0.0.1:6667")
-	os.Setenv("HTTPS_PROXY", "https://127.0.0.1:6667")
+	//os.Setenv("HTTP_PROXY", "http://127.0.0.1:6667")
+	//os.Setenv("HTTPS_PROXY", "https://127.0.0.1:6667")
 
 	e.lastTimes++
 	params = append(params, "api_key="+e.option.AccessKey)
