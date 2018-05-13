@@ -6,4 +6,4 @@
 
 最后感谢原作者开发了这么好的项目让大家学习，再次附上原项目地址：https://github.com/miaolz123/samaritan
 
-[文档](www.quartbot.org/#/)
+[更新的文档](http://www.quartbot.org/#/)
