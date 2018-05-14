@@ -106,7 +106,7 @@ class App extends Component {
                 <Icon name="id-card-o" fixedWidth size={collapse ? '2x' : undefined} /><span className="nav-text">User</span>
               </Menu.Item>
               <Menu.Item key="docs">
-                <a href="http://samaritan.stockdb.org" target='_blank'>
+                <a href="http://www.quartbot.org" target='_blank'>
                   <Icon name="book" fixedWidth size={collapse ? '2x' : undefined} /><span className="nav-text">Docs</span>
                 </a>
               </Menu.Item>
