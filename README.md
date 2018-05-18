@@ -7,3 +7,18 @@
 最后感谢原作者开发了这么好的项目让大家学习，再次附上原项目地址：https://github.com/miaolz123/samaritan
 
 [更新的文档](http://www.quartbot.org/#/)
+
+## 编译
+
+直接运行build.sh进行编译，需要用到xgo和Docker，可以同时编译出多个平台下的可执行文件，如果不需要多平台支持，可以直接用go编译，推荐使用LiteIDE。
+
+## 支持的交易所
+
+| 交易所 | 货币类型 |
+| -------- | ----- |
+| okex | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT`, `ONT/ETH` |
+| 火币网 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |
+| 比特儿国际 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |
+| 币安 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |
+| poloniex | `ETH/BTC`, `XMR/BTC`, `BTC/USDT`, `LTC/BTC`, `ETC/BTC`, `XRP/BTC`, `ETH/USDT`, `ETC/ETH`, ... |
+| okex 期货 | `BTC.WEEK/USD`, `BTC.WEEK2/USD`, `BTC.MONTH3/USD`, `LTC.WEEK/USD`, ... |
