@@ -14,6 +14,7 @@ QuantBot运行后，打开 `http://localhost:9876`。
 
 | 交易所 | 货币类型 |
 | -------- | ----- |
+| zb | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `LTC/USDT`, `QTUM/USDT` |
 | okex | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT`, `ONT/ETH` |
 | 火币网 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |
 | 比特儿国际 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |

@@ -15,14 +15,13 @@ var (
 	Executor      = make(map[int64]*Global) //保存正在运行的策略，防止重复运行
 	errHalt       = fmt.Errorf("HALT")
 	exchangeMaker = map[string]func(api.Option) api.Exchange{ //保存所有交易所的构造函数
-		constant.Okex:    api.NewOKEX,
-		constant.Huobi:   api.NewHuobi,
-		constant.Binance: api.NewBinance,
-		constant.GateIo:  api.NewGateIo,
-		//constant.Poloniex:     api.NewPoloniex,
-		//constant.Btcc:         api.NewBtcc,
-		//constant.OkcoinFuture: api.NewOKCoinFuture,
-		//constant.OandaV20:     api.NewOandaV20,
+		constant.Zb:         api.NewZb,
+		constant.Okex:       api.NewOKEX,
+		constant.Huobi:      api.NewHuobi,
+		constant.Binance:    api.NewBinance,
+		constant.GateIo:     api.NewGateIo,
+		constant.Poloniex:   api.NewPoloniex,
+		constant.OkexFuture: api.NewOkexFuture,
 	}
 )
 

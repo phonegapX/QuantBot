@@ -3,19 +3,20 @@ package constant
 // error constants
 const (
 	Banner                     = "QuantBot"
-	Version                    = "0.0.1"
+	Version                    = "0.0.2"
 	ErrAuthorizationError      = "Authorization Error"
 	ErrInsufficientPermissions = "Insufficient Permissions"
 )
 
 // exchange types
 const (
+	Zb         = "zb"
 	Okex       = "okex"
 	Huobi      = "huobi"
 	Binance    = "binance"
 	GateIo     = "gateio"
 	Poloniex   = "poloniex"
-	OkexFuture = "Okex.future"
+	OkexFuture = "okex.future"
 )
 
 // log types
@@ -45,5 +46,5 @@ const (
 // some variables
 var (
 	Consts        = []string{"M", "M5", "M15", "M30", "H", "D", "W"}
-	ExchangeTypes = []string{Okex, Huobi, Binance, GateIo, Poloniex, OkexFuture}
+	ExchangeTypes = []string{Zb, Okex, Huobi, Binance, GateIo, Poloniex, OkexFuture}
 )
