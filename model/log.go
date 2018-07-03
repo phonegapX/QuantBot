@@ -30,6 +30,9 @@ func (user User) ListLog(id, size, page int64) (total int64, logs []Log, err err
 	if err != nil {
 		return
 	}
+	if size == -1 {
+		size = 1000
+	}
 	err = DB.Where("trader_id = ?", id).Order("timestamp desc, id desc").Limit(size).Offset((page - 1) * size).Find(&logs).Error
 	for i, l := range logs {
 		logs[i].Time = time.Unix(0, l.Timestamp)

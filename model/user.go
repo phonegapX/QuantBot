@@ -33,10 +33,9 @@ func (user User) ListUser(size, page int64, order string) (total int64, users []
 	if err != nil {
 		return
 	}
-	if size == -1 && page == 1 {
-		err = DB.Where("level < ? OR id = ?", user.Level, user.ID).Order(toUnderScoreCase(order)).Find(&users).Error
-	} else {
-		err = DB.Where("level < ? OR id = ?", user.Level, user.ID).Order(toUnderScoreCase(order)).Limit(size).Offset((page - 1) * size).Find(&users).Error
+	if size == -1 {
+		size = 1000
 	}
+	err = DB.Where("level < ? OR id = ?", user.Level, user.ID).Order(toUnderScoreCase(order)).Limit(size).Offset((page - 1) * size).Find(&users).Error
 	return
 }

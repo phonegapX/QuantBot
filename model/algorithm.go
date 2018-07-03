@@ -33,6 +33,9 @@ func (user User) ListAlgorithm(size, page int64, order string) (total int64, alg
 	if err != nil {
 		return
 	}
+	if size == -1 {
+		size = 1000
+	}
 	err = DB.Where("user_id in (?)", userIDs).Order(toUnderScoreCase(order)).Limit(size).Offset((page - 1) * size).Find(&algorithms).Error
 	return
 }
