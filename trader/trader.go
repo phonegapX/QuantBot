@@ -22,6 +22,7 @@ var (
 		constant.GateIo:     api.NewGateIo,
 		constant.Poloniex:   api.NewPoloniex,
 		constant.OkexFuture: api.NewOkexFuture,
+		constant.BigOne:     api.NewBigOne,
 	}
 )
 

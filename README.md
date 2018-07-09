@@ -9,6 +9,7 @@
 [更新的文档](http://www.quartbot.org/#/)
 
 版本更新到v0.0.2，新增了中币交易所的接口。
+版本更新到v0.0.3，新增了BigONE交易所的接口，当前热门的 “交易挖矿+持币分红” 交易所。(2018-07-09)
 
 ## 编译
 
@@ -25,3 +26,4 @@
 | 币安 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |
 | poloniex | `ETH/BTC`, `XMR/BTC`, `BTC/USDT`, `LTC/BTC`, `ETC/BTC`, `XRP/BTC`, `ETH/USDT`, `ETC/ETH`, ... |
 | okex 期货 | `BTC.WEEK/USD`, `BTC.WEEK2/USD`, `BTC.MONTH3/USD`, `LTC.WEEK/USD`, ... |
+| BigONE | `BTC/USDT`, `ONE/USDT`, `EOS/USDT`, `ETH/USDT`, `BCH/USDT`, `EOS/ETH` |

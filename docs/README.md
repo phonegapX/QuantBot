@@ -21,6 +21,7 @@ QuantBot运行后，打开 `http://localhost:9876`。
 | 币安 | `BTC/USDT`, `ETH/USDT`, `EOS/USDT`, `ONT/USDT`, `QTUM/USDT` |
 | poloniex | `ETH/BTC`, `XMR/BTC`, `BTC/USDT`, `LTC/BTC`, `ETC/BTC`, `XRP/BTC`, `ETH/USDT`, `ETC/ETH`, ... |
 | okex 期货 | `BTC.WEEK/USD`, `BTC.WEEK2/USD`, `BTC.MONTH3/USD`, `LTC.WEEK/USD`, ... |
+| BigONE | `BTC/USDT`, `ONE/USDT`, `EOS/USDT`, `ETH/USDT`, `BCH/USDT`, `EOS/ETH` |
 
 # 算法策略编写说明
 
