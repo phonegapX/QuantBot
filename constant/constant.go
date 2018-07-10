@@ -3,7 +3,7 @@ package constant
 // error constants
 const (
 	Banner                     = "QuantBot"
-	Version                    = "0.0.2"
+	Version                    = "0.0.3"
 	ErrAuthorizationError      = "Authorization Error"
 	ErrInsufficientPermissions = "Insufficient Permissions"
 )
