@@ -17,10 +17,10 @@
 
 ## 包依赖问题
 
-通过使用[glide](https://github.com/Masterminds/glide)工具可以解决大部分包的依赖。无法自动安装的包需要自己下载。
+通过使用[glide](https://github.com/Masterminds/glide)工具可以解决包的依赖。安装glide后执行下列命令。
 
 ```shell
-$ cd QuantBot 
+$ cd QuantBot
 $ glide install
 ```
 
