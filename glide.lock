@@ -1,0 +1,66 @@
+hash: f9c3c63c7ef288b179eeb0411ae157e7f6afb13528f8577d4e3f46b8241b7aee
+updated: 2018-08-22T17:14:54.904875156+08:00
+imports:
+- name: github.com/bitly/go-simplejson
+  version: aabad6e819789e569bd6aabf444c935aa9ba1e44
+- name: github.com/dgrijalva/jwt-go
+  version: 06ea1031745cb8b3dab3f6a236daf2b0aa468b7e
+- name: github.com/go-ini/ini
+  version: 358ee7663966325963d4e8b2e1fbd570c5195153
+- name: github.com/go-resty/resty
+  version: 97a15579492cd5f35632499f315d7a8df94160a1
+- name: github.com/go-sql-driver/mysql
+  version: 99ff426eb706cffe92ff3d058e168b278cabf7c7
+- name: github.com/hprose/hprose-golang
+  version: b2b25423cffe1829254b1e4fbc6f0a7360dd626b
+  subpackages:
+  - io
+  - rpc
+  - util
+- name: github.com/jinzhu/gorm
+  version: 6ed508ec6a4ecb3531899a69cbc746ccf65a4166
+  subpackages:
+  - dialects/mysql
+  - dialects/postgres
+  - dialects/sqlite
+- name: github.com/jinzhu/inflection
+  version: 04140366298a54a039076d798123ffa108fff46c
+- name: github.com/lib/pq
+  version: 90697d60dd844d5ef6ff15135d0203f65d2f53b8
+  subpackages:
+  - hstore
+  - oid
+- name: github.com/mattn/go-sqlite3
+  version: b3511bfdd742af558b54eb6160aca9446d762a19
+- name: github.com/miaolz123/conver
+  version: 15152279f21e111e8cc8761425272fba471a9f07
+- name: github.com/mitchellh/mapstructure
+  version: f15292f7a699fcc1a38a80977f80a046874ba8ac
+- name: github.com/nubo/jwt
+  version: da5b79c3bbaf453145ef247b54790ffb94dd224f
+- name: github.com/robertkrimen/otto
+  version: 15f95af6e78dcd2030d8195a138bd88d4f403546
+  subpackages:
+  - ast
+  - dbg
+  - file
+  - parser
+  - registry
+  - token
+- name: golang.org/x/net
+  version: 922f4815f713f213882e8ef45e0d315b164d705c
+  repo: https://github.com/golang/net
+  vcs: git
+  subpackages:
+  - publicsuffix
+- name: google.golang.org/appengine
+  version: 4216e58b9158e5f1c906f1aca75162a46a2ec88a
+  repo: https://github.com/golang/appengine
+  vcs: git
+  subpackages:
+  - cloudsql
+- name: gopkg.in/sourcemap.v1
+  version: 6e83acea0053641eff084973fee085f0c193c61a
+  subpackages:
+  - base64vlq
+testImports: []
