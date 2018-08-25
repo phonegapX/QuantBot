@@ -6,7 +6,7 @@
 
 这里我写了个简单的搬砖演示程序：[代码](https://github.com/phonegapX/trader-sample) [博客](http://phonegap.me/post/52.html)
 
-[更新的文档](http://www.quartbot.org/#/)
+[更新的文档](http://www.quantbot.org/#/)
 
 版本更新到v0.0.2，新增了中币交易所的接口。  
 版本更新到v0.0.3，新增了BigONE交易所的接口，当前热门的 “交易挖矿+持币分红” 交易所。(2018-07-09)
