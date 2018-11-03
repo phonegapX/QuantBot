@@ -1,0 +1,37 @@
+package: github.com/phonegapX/QuantBot
+ignore:
+#- golang.org/x/net/publicsuffix
+#- google.golang.org/appengine/cloudsql
+import:
+- package: golang.org/x/net
+  repo: https://github.com/golang/net
+  vcs: git
+- package: google.golang.org/appengine
+  repo: https://github.com/golang/appengine
+  vcs: git
+- package: github.com/bitly/go-simplejson
+  version: ~0.5.0
+- package: github.com/dgrijalva/jwt-go
+  version: ~3.2.0
+- package: github.com/go-ini/ini
+  version: ~1.38.1
+- package: github.com/go-resty/resty
+  version: ~1.8.0
+- package: github.com/hprose/hprose-golang
+  version: ~2.0.4
+  subpackages:
+  - io
+  - rpc
+- package: github.com/jinzhu/gorm
+  version: ~1.9.1
+  subpackages:
+  - dialects/mysql
+  - dialects/postgres
+  - dialects/sqlite
+- package: github.com/miaolz123/conver
+- package: github.com/mitchellh/mapstructure
+- package: github.com/nubo/jwt
+- package: github.com/robertkrimen/otto
+  subpackages:
+  - registry
+

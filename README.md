@@ -6,7 +6,7 @@
 
 这里我写了个简单的搬砖演示程序：[代码](https://github.com/phonegapX/trader-sample) [博客](http://phonegap.me/post/52.html)
 
-[更新的文档](http://www.quartbot.org/#/)
+[更新的文档](http://www.quantbot.org/#/)
 
 版本更新到v0.0.2，新增了中币交易所的接口。  
 版本更新到v0.0.3，新增了BigONE交易所的接口，当前热门的 “交易挖矿+持币分红” 交易所。(2018-07-09)
@@ -14,6 +14,15 @@
 ## 编译
 
 直接运行build.sh进行编译，需要用到xgo和Docker，可以同时编译出多个平台下的可执行文件，如果不需要多平台支持，可以直接用go编译，推荐使用LiteIDE。
+
+## 包依赖问题
+
+通过使用[glide](https://github.com/Masterminds/glide)工具可以解决包的依赖。安装glide后执行下列命令。
+
+```shell
+$ cd QuantBot
+$ glide install
+```
 
 ## 支持的交易所
 
