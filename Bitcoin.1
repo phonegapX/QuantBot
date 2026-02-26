@@ -1,0 +1,99 @@
+Bitcoin=.=1@Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @moimassmason
+Sign out
+ Watch 8
+ Star 78  Fork 17 phonegapX/QuantBot
+ Code  Issues 2  Pull requests 0  Projects 0  Wiki  Insights
+数字货币量化交易学习框架 http://www.quantbot.org
+trading-bot
+algorithmic-trading-engine
+bitcoin
+ 20 commits
+ 1+Skip to content bitcoin Pull requests Issues Marketplace Explore @moimassmason Sign out Repositories26K Code12M+ Commits1M Issues67K Marketplace Topics222 Wikis6K Users3K Languages 4,251 JavaScript 3,421 Java 3,234 Python 1,131 PHP 1,008 C++ 912 HTML 665 Swift 622 Ruby 611 Go 559 C# Advanced search Cheat sheet bitcoin logo Bitcoin Bitcoin is a cryptocurrency developed by Satoshi Nakamoto. See topic 26,384 repository results Sort: Best match bitcoin/bitcoin Bitcoin Core integration/staging tree c-plus-plus cryptography bitcoin p2p cryptocurrency MIT license Updated 29 minutes ago 2 issues need help C++ 35.2k bitcoinbook/bitcoinbook Mastering Bitcoin 2nd Edition - Programming the Open Blockchain Updated 5 days ago Python 10.7k bitcoinj/bitcoinj A library for working with Bitcoin java library bitcoin blockchain Apache-2.0 license Updated 9 days ago Java 3k etotheipi/BitcoinArmory Python-Based Bitcoin Software Updated 12 days ago C++ 634 bitcoinjs/bitcoinjs-lib A javascript Bitcoin library for node.js and browsers. javascript nodejs browserify bitcoin bitcoinjs bitcoinjs-lib MIT license Updated 19 hours ago JavaScript 3.1k bitcoin/bips Bitcoin Improvement Proposals Updated 7 hours ago Python 3k bitcoin-wallet/bitcoin-wallet Bitcoin Wallet app for your Android device. Standalone Bitcoin node, no centralized backend required. java bitcoin bitcoinj blockchain p2p bitcoin-wallet android Updated 44 minutes ago Java 1.6k spesmilo/electrum Electrum; Bitcoin thin client MIT license Updated an hour ago Python 3k bitcoin-dot-org/bitcoin.org Bitcoin.org website bitcoin blockchain cryptocurrency Updated a day ago CSS 808 maxme/bitcoin-arbitrage Bitcoin arbitrage - opportunity detector Updated on Jul 1 Python 1.7k Previous12345…99100Next © 2018 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub Pricing API Training Blog About Press h to open a hovercard with more details. branch
+ 0 releases
+ 2 contributors
+ MIT
+ Go 99.6%	 Other 0.4% 
+Go
+Other
+Branch: master 
+New pull request
+Create new file Upload files Find file
+Clone or download 
+@phonegapX
+phonegapX update
+Latest commit 1731e49  on Aug 29
+api	add big.one	3 months ago
+config	first commit	5 months ago
+constant	update	3 months ago
+custom	first commit	5 months ago
+docs	add big.one	3 months ago
+handler	first commit	5 months ago
+model	near 'OFFSET': syntax error --bug fixed	3 months ago
+plugin	first commit	5 months ago
+resource	update	a month ago
+trader	add big.one	3 months ago
+web	update	a month ago
+.gitattributes	update	5 months ago
+.gitignore	update	5 months ago
+LICENSE	first commit	5 months ago
+QuantBot.go	first commit	5 months ago
+README.md	Update README.md	2 months ago
+build.sh	first commit	5 months ago
+glide.lock	add glide.yaml	2 months ago
+glide.yaml	add glide.yaml	2 months ago
+ README.md
+QuantBot
+
+最近研究量化交易，学习了很好的一个项目：Samaritan
+
+可惜这个项目已经很久很久没有更新過了，另外项目中也有一些BUG，其中最致命的BUG就是在实现javascript并发任务这个功能的时候没有考虑资源冲突的处理，导致程序无法正常工作，所以对这些部分进行了一些修改，使其可以正常工作，并且更新了文档，另外原有的一些交易所接口也因为各种原因失效了，所以这里也重新更新了部分交易所接口，比如火币，比特儿国际，币安，OKEX等，并且更新了文档，然后给项目重新改了个更直观的名字。另外每个交易所的交易对只是选取了几个大币种的，如果需要添加新的交易对，可以修改源代码进行添加。还有就是某些交易所需要搭梯子，测试的时候请自行准备梯子，并修改对应交易所接口源码。
+
+这里我写了个简单的搬砖演示程序：代码 博客
+
+更新的文档
+
+版本更新到v0.0.2，新增了中币交易所的接口。
+版本更新到v0.0.3，新增了BigONE交易所的接口，当前热门的 “交易挖矿+持币分红” 交易所。(2018-07-09)
+
+编译
+
+直接运行build.sh进行编译，需要用到xgo和Docker，可以同时编译出多个平台下的可执行文件，如果不需要多平台支持，可以直接用go编译，推荐使用LiteIDE。
+
+包依赖问题
+
+通过使用glide工具可以解决包的依赖。安装glide后执行下列命令。
+
+$ cd QuantBot
+$ glide install
+支持的交易所
+
+交易所	货币类型
+zb	BTC/USDT, ETH/USDT, EOS/USDT, LTC/USDT, QTUM/USDT
+okex	BTC/USDT, ETH/USDT, EOS/USDT, ONT/USDT, QTUM/USDT, ONT/ETH
+火币网	BTC/USDT, ETH/USDT, EOS/USDT, ONT/USDT, QTUM/USDT
+比特儿国际	BTC/USDT, ETH/USDT, EOS/USDT, ONT/USDT, QTUM/USDT
+币安	BTC/USDT, ETH/USDT, EOS/USDT, ONT/USDT, QTUM/USDT
+poloniex	ETH/BTC, XMR/BTC, BTC/USDT, LTC/BTC, ETC/BTC, XRP/BTC, ETH/USDT, ETC/ETH, ...
+okex 期货	BTC.WEEK/USD, BTC.WEEK2/USD, BTC.MONTH3/USD, LTC.WEEK/USD, ...
+BigONE	BTC/USDT, ONE/USDT, EOS/USDT, ETH/USDT, BCH/USDT, EOS/ETH
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
